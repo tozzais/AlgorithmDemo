@@ -5,11 +5,11 @@ import org.junit.Test;
 import static org.junit.Assert.assertEquals;
 
 /**
- * Example local unit test, which will execute on the development machine (host).
+ * 冒泡排序
  *
- * @see <a href="http://d.android.com/tools/testing">Testing documentation</a>
+ *
  */
-public class BubbleUnitTest {
+public class BubbleSortUnitTest {
     @Test
     public void test() {
         /*
