@@ -8,5 +8,6 @@ public class Explain {
              你不能只是单纯的改变节点内部的值，而是需要实际的进行节点交换。
     20201021：925. 长按键入。利用双指针
     20201022：划分字母区间 (https://leetcode-cn.com/problems/partition-labels/)
+    20201023：234. 回文链表（https://leetcode-cn.com/problems/palindrome-linked-list/）
      */
 }
