@@ -10,6 +10,7 @@ import java.util.List;
 import java.util.Map;
 import java.util.Queue;
 import java.util.Set;
+import java.util.Stack;
 
 /**
  * 129. 求根到叶子节点数字之和
@@ -31,25 +32,26 @@ public class LeetCode20201029Test {
         if (root == null) {
             return 0;
         }
+
         int sum = 0;
-        Queue<TreeNode> nodeQueue = new LinkedList<TreeNode>();
-        Queue<Integer> numQueue = new LinkedList<Integer>();
-        nodeQueue.offer(root);
-        numQueue.offer(root.val);
+        Stack<TreeNode> nodeQueue = new Stack<>();
+        Stack<Integer> numQueue = new Stack<>();
+        nodeQueue.push(root);
+        numQueue.push(root.val);
         while (!nodeQueue.isEmpty()) {
-            TreeNode node = nodeQueue.poll();
-            int num = numQueue.poll();
+            TreeNode node = nodeQueue.pop();
+            int num = numQueue.pop();
             TreeNode left = node.left, right = node.right;
             if (left == null && right == null) {
                 sum += num;
             } else {
                 if (left != null) {
-                    nodeQueue.offer(left);
-                    numQueue.offer(num * 10 + left.val);
+                    nodeQueue.push(left);
+                    numQueue.push(num * 10 + left.val);
                 }
                 if (right != null) {
-                    nodeQueue.offer(right);
-                    numQueue.offer(num * 10 + right.val);
+                    nodeQueue.push(right);
+                    numQueue.push(num * 10 + right.val);
                 }
             }
         }
