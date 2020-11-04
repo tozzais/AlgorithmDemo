@@ -2,6 +2,9 @@ package com.example.algorithmdemo;
 
 import org.junit.Test;
 
+import java.util.HashMap;
+import java.util.Map;
+
 /**
  * 测试数组
  *
@@ -10,7 +13,8 @@ import org.junit.Test;
 public class LeetCodeArrayTest {
     @Test
     public void test() {
-        int[][]  a = new int[][]{{},{},{},{}};
+        int[] a = new int[]{2,3,3};
+        System.out.println(majorityElement(a));
 
     }
 
@@ -29,6 +33,69 @@ public class LeetCodeArrayTest {
         return b;
 
 
+    }
+
+    /**
+     * 面试题 17.10. 主要元素 （ 2020-11-04）
+     * @param nums
+     * @return
+     */
+    public int majorityElement(int[] nums) {
+        Map<Integer,Integer> map = new HashMap<>();
+        for (int i = 0; i < nums.length; i++) {
+            int num = nums[i];
+            Integer integer = map.get(num);
+            if (integer != null) map.put(num, integer + 1);
+            else map.put(num, 1);
+        }
+        int main = -1;
+        for (int i:map.keySet()){
+            Integer integer = map.get(i);
+            if (integer >nums.length/2){
+                main = i;
+                break;
+            }
+        }
+        return main;
+
+    }
+    public int majorityElement1(int[] nums) {
+        //判空
+        if (nums.length == 0) {
+            return -1;
+        }
+
+        //投票环节 众数major和一个频数count
+        int major = 0;
+        int vote = 0;
+        //[1,2,5,9,5,9,5,5,5]
+        for (int num : nums) {
+            if (vote == 0) {
+                major = num;
+                vote++;
+            } else {
+                if (num == major) {
+                    vote++;
+                } else {
+                    vote--;
+                }
+            }
+        }
+
+        //验证环节
+        if (vote == 0) {
+            return -1;
+        }
+        int identify = 0;
+        for (int num : nums) {
+            if (num == major) {
+                identify++;
+                if (identify > nums.length / 2) {
+                    return major;
+                }
+            }
+        }
+        return -1;
     }
 
 
