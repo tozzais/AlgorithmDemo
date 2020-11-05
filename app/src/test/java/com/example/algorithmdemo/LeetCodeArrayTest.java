@@ -81,7 +81,6 @@ public class LeetCodeArrayTest {
                 }
             }
         }
-
         //验证环节
         if (vote == 0) {
             return -1;
@@ -98,5 +97,29 @@ public class LeetCodeArrayTest {
         return -1;
     }
 
+    /**
+     * 1588. 所有奇数长度子数组的和
+     */
+    public int sumOddLengthSubarrays(int[] arr) {
+        int sum = 0;
+        for (int i = 1; i <= arr.length; i = i+2) {
+            sum+= subSum(arr,i);
+        }
+        return sum;
+    }
+    public int subSum(int[] arr,int sub){
+        int sum = 0;
+        for (int i = 0; i < arr.length-sub+1; i++) {
+            for (int j = i; j < i+sub; j++) {
+                sum+= arr[j];
+            }
+        }
+        return sum;
+    }
+    @Test
+    public void test1() {
+        int[] a = new int[]{1,4,2,5,3};
+        System.out.println(sumOddLengthSubarrays(a));
 
+    }
 }
