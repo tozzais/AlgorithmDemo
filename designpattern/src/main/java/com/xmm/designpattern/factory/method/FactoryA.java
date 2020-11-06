@@ -1,7 +1,8 @@
 package com.xmm.designpattern.factory.method;
 
-import com.example.designpatternsdemo.factory.simple.Product;
-import com.example.designpatternsdemo.factory.simple.ProductA;
+
+import com.xmm.designpattern.factory.simple.Product;
+import com.xmm.designpattern.factory.simple.ProductA;
 
 public class FactoryA implements Factory {
     @Override
