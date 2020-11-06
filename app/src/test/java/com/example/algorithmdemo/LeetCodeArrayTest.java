@@ -2,6 +2,8 @@ package com.example.algorithmdemo;
 
 import org.junit.Test;
 
+import java.lang.reflect.Array;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,9 +17,7 @@ public class LeetCodeArrayTest {
     public void test() {
         int[] a = new int[]{2,3,3};
         System.out.println(majorityElement(a));
-
     }
-
     /**
      * 旋转矩阵
      * @param A
@@ -34,7 +34,6 @@ public class LeetCodeArrayTest {
 
 
     }
-
     /**
      * 面试题 17.10. 主要元素 （ 2020-11-04）
      * @param nums
@@ -96,7 +95,6 @@ public class LeetCodeArrayTest {
         }
         return -1;
     }
-
     /**
      * 1588. 所有奇数长度子数组的和
      */
@@ -120,6 +118,17 @@ public class LeetCodeArrayTest {
     public void test1() {
         int[] a = new int[]{1,4,2,5,3};
         System.out.println(sumOddLengthSubarrays(a));
+
+    }
+    /**
+     * 628. 三个数的最大乘积
+     */
+    @Test
+    public void maximumProduct() {
+        int[] nums = new int[]{1,4,2,5,3};
+        Arrays.sort(nums);
+        int a = Math.max(nums[0] * nums[1] * nums[nums.length - 1]
+                , nums[nums.length - 1] * nums[nums.length - 2] * nums[nums.length - 3]);
 
     }
 }
