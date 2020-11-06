@@ -1,2 +1,4 @@
+include ':javabasic'
+include ':FirstCode'
 include ':app'
 rootProject.name = "AlgorithmDemo"
