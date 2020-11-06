@@ -1,3 +1,4 @@
+include ':designpattern'
 include ':javabasic'
 include ':FirstCode'
 include ':app'
