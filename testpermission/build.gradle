@@ -1,0 +1,63 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.1"
+
+    defaultConfig {
+        applicationId "com.xmm.testpermission"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+}
+
+dependencies {
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+
+    //使用baselibrary需要添加的
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+    implementation project(path: ':baselibrary')
+
+//    //图片选择 发送彩信
+//    implementation 'com.ypx.yimagepicker:androidx:3.1.4'
+    //读写手机存储 获取手机信息  发送彩信
+//    implementation 'cn.yc:WebViewLib:1.2.2'
+    //发送彩信
+//    implementation 'com.luffykou:android-common-utils:1.1.3'
+    //发送彩信
+//    implementation 'com.github.dueeeke.dkplayer:dkplayer-java:3.2.6'
+    //发送彩信
+//      implementation 'com.github.wendux:WebViewJavascriptBridge:master-SNAPSHOT'
+
+    //发送彩信 读写权限
+//    implementation 'com.github.xuexiangjys:XUpdate:1.1.4'
+    //读发短信，读写权限，联系人，日历，手机信息，定位，相机，录音，开启蓝牙 系统设置
+//    implementation 'com.github.xuexiangjys.XUtil:xutil-sub:1.1.8'
+    //读写权限
+//    implementation 'com.github.xuexiangjys.XAOP:xaop-runtime:1.0.5'
+
+
+}

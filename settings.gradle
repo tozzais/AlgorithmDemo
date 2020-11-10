@@ -1,3 +1,5 @@
+include ':baselibrary'
+include ':testpermission'
 include ':designpattern'
 include ':javabasic'
 include ':FirstCode'
