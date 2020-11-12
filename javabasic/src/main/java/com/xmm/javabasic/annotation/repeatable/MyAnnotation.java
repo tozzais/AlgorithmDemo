@@ -1,6 +1,5 @@
 package com.xmm.javabasic.annotation.repeatable;
 
-import com.xmm.java.annotation.Per;
 
 import java.lang.annotation.Documented;
 import java.lang.annotation.ElementType;

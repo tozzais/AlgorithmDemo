@@ -1,8 +1,8 @@
 package com.xmm.designpattern.adapterMode.object_adapter;
 
 
-import com.example.designpatternsdemo.adapterMode.class_adapter.Source;
-import com.example.designpatternsdemo.adapterMode.class_adapter.Targetable;
+import com.xmm.designpattern.adapterMode.class_adapter.Source;
+import com.xmm.designpattern.adapterMode.class_adapter.Targetable;
 
 /**
  * 对象的适配器模式
