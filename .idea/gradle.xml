@@ -16,6 +16,8 @@
             <option value="$PROJECT_DIR$/baselibrary" />
             <option value="$PROJECT_DIR$/designpattern" />
             <option value="$PROJECT_DIR$/javabasic" />
+            <option value="$PROJECT_DIR$/rpc1" />
+            <option value="$PROJECT_DIR$/rpc2" />
             <option value="$PROJECT_DIR$/testpermission" />
           </set>
         </option>
