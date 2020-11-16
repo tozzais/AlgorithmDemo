@@ -1,5 +1,3 @@
-include ':rpc2'
-include ':rpc1'
 include ':baselibrary'
 include ':testpermission'
 include ':designpattern'
