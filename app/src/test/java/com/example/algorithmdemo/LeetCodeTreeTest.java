@@ -3,7 +3,9 @@ package com.example.algorithmdemo;
 import org.junit.Test;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
+import java.util.Queue;
 
 /**
  * 测试 树
@@ -61,6 +63,46 @@ public class LeetCodeTreeTest {
         }else {
             return Math.max(CalculationDeep(root.left),CalculationDeep(root.right))+1;
         }
+    }
+
+    class Node {
+        public int val;
+        public List<Node> children;
+
+        public Node() {}
+
+        public Node(int _val) {
+            val = _val;
+        }
+
+        public Node(int _val, List<Node> _children) {
+            val = _val;
+            children = _children;
+        }
+    };
+
+    @Test
+    public void test1() {
+        int[][]  a = new int[][]{{},{},{},{}};
+
+    }
+
+    /**
+     * 589. N叉树的前序遍历
+     * @param root
+     * @return
+     */
+    List<Integer> list = new ArrayList<>();
+    public List<Integer> preorder(Node root) {
+        if(root == null)
+            return list;
+        list.add(root.val);
+        for (Node node:root.children){
+            preorder(node);
+        }
+        return list;
+
+
     }
 
 
