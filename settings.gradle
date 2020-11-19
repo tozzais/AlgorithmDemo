@@ -1,3 +1,4 @@
+include ':NetModule'
 include ':retrofitdemo'
 include ':rpcclient'
 include ':rpcservice'
