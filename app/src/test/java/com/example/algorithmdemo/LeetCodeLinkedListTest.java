@@ -2,6 +2,7 @@ package com.example.algorithmdemo;
 
 import org.junit.Test;
 
+import java.security.Key;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -39,4 +40,19 @@ public class LeetCodeLinkedListTest {
     }
 
 
+    /**
+     * 剑指 Offer 22. 链表中倒数第k个节点
+     * @param head
+     * @param k
+     * @return
+     */
+    public ListNode getKthFromEnd(ListNode head, int k) {
+        List<ListNode> list = new ArrayList<>();
+        while (head != null){
+            list.add(head);
+            head = head.next;
+        }
+        return list.get(list.size()- k);
+
+    }
 }
