@@ -59,5 +59,8 @@ dependencies {
     //读写权限
 //    implementation 'com.github.xuexiangjys.XAOP:xaop-runtime:1.0.5'
 
+    implementation 'com.squareup.retrofit2:retrofit:2.6.1'
+    implementation 'com.squareup.retrofit2:converter-gson:2.6.1'
+    implementation 'com.squareup.okhttp3:logging-interceptor:4.4.1'
 
 }
