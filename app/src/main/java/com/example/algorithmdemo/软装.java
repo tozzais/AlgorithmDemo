@@ -7,7 +7,7 @@ public class 软装{
     电视柜2200*40
     冰箱宽 600 1900
     桌子 1400*800
-    沙发2200 小沙发 860 茶几600*900
+    沙发宽*2200 小沙发 860 茶几600*900
  1：净水器
         选择1：美的 瑞丰商博城L区 https://item.jd.com/100004685505.html 1898
         选择2：小米 https://item.jd.com/100009776714.html
@@ -37,9 +37,22 @@ public class 软装{
         噪音:国家标准规定噪音小于45分贝。一般要在38-40分贝之间
         容量：最低平均容积50升/人
 4：电视
+    https://product.suning.com/0000000000/11393099230.html?safp=d488778a.13701.productWrap.10&safc=prd.0.0&safpn=10007
 	买小米或者华为的 618销量高的（3000）
+	参数：
+	cpu 四核
+	内存 2G以上
+	是不是支持运动防抖
+    是不是广色域
 5：洗衣机
+    https://product.suning.com/0000000000/11848722615.html#?safp=d488778a.13701.productWrap.95&safc=prd.0.0&safpn=10007&ch=cu
 	海尔的 3000
+	指标：
+	洗净比：一般大于0.7 越大越好
+	能效等级： 123级 一级最好
+	耗电量：一般200W
+	排水方式：上排和下排 选下排
+	电机类型：变频/直流
 
 
 
@@ -72,8 +85,20 @@ public class 软装{
      加分项：盖板缓冲功能
 
      */
+/*
+    净水器：https://item.jd.com/100009776714.html
+    热水器：https://item.jd.com/100007370977.html
+    洗衣机：https://item.jd.com/100012295086.html
+    冰箱：https://item.jd.com/7300282.html
+    电视：https://item.jd.com/100008829953.html
 
+    净水器：https://product.suning.com/0000000000/11530606324.html?safp=d488778a.40134.Jyd6.92&safc=prd.0.0&safpn=10009
+    热水器：https://product.suning.com/0000000000/12003240062.html?safp=d488778a.40134.Jyd6.49&safc=prd.0.0&safpn=10009
+    洗衣机：https://product.suning.com/0000000000/11848722615.html#?safp=d488778a.13701.productWrap.95&safc=prd.0.0&safpn=10007&ch=cu
+    冰箱：https://product.suning.com/0070114178/10523211586.html?safp=d488778a.40134.Jyd6.10&safc=prd.0.0&safpn=10009
+    电视：https://product.suning.com/0000000000/11393099230.html?safp=d488778a.13701.productWrap.10&safc=prd.0.0&safpn=10007
 
+  */
 
 
 
