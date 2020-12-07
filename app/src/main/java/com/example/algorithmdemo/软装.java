@@ -86,12 +86,13 @@ public class 软装{
 
      */
 /*
+    京东
     净水器：https://item.jd.com/100009776714.html
     热水器：https://item.jd.com/100007370977.html
     洗衣机：https://item.jd.com/100012295086.html
     冰箱：https://item.jd.com/7300282.html
     电视：https://item.jd.com/100008829953.html
-
+    苏宁
     净水器：https://product.suning.com/0000000000/11530606324.html?safp=d488778a.40134.Jyd6.92&safc=prd.0.0&safpn=10009
     热水器：https://product.suning.com/0000000000/12003240062.html?safp=d488778a.40134.Jyd6.49&safc=prd.0.0&safpn=10009
     洗衣机：https://product.suning.com/0000000000/11848722615.html#?safp=d488778a.13701.productWrap.95&safc=prd.0.0&safpn=10007&ch=cu
