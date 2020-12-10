@@ -16,7 +16,7 @@ public class LeetCode20201210Test {
     @Test
     public void test() {
         int[] a = new int[]{10,10};
-        System.out.println(lemonadeChange1(a));
+        System.out.println(lemonadeChange2(a));
 
 
     }
