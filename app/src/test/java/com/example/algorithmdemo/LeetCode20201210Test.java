@@ -28,7 +28,7 @@ public class LeetCode20201210Test {
             switch (bill) {
                 case 5:
                     list.add(bill);
-                    break;
+                break;
                 case 10:
                     if (list.contains(5)) {
                         list.remove(list.indexOf(5));
