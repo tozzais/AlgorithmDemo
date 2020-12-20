@@ -6,42 +6,44 @@ import org.junit.Test;
 import java.util.Map;
 
 /**
- 方法一：哈希表
- 思路及解法
+ 去除重复字母
  */
 public class LeetCode20201218Test {
 
     @Test
     public void test() {
-
-        System.out.println(findTheDifference("abcd","eabcd"));
+        System.out.println(removeDuplicateLetters("bcabc"));
 
     }
 
-    /**
-     * 随机重拍
-     * @param s
-     * @param t
-     * @return
-     */
-    public char findTheDifference(String s, String t) {
-        int length = s.length();
-        int[] a = new int[26];
-        int[] b = new int[26];
-        for (int i = 0; i < length+1; i++) {
-            if (i != length){
-                char c = s.charAt(i);
-                a[c-'a'] ++;
-            }
-            char c1 = t.charAt(i);
-            b[c1-'a'] ++;
+
+    public String removeDuplicateLetters(String s) {
+        boolean[] vis = new boolean[26];
+        int[] num = new int[26];
+        for (int i = 0; i < s.length(); i++) {
+            num[s.charAt(i) - 'a']++;
         }
-        for (int i = 0; i < 26; i++) {
-            if (a[i] != b[i]){
-                return (char) ('a'+i);
+
+        StringBuffer sb = new StringBuffer();
+        for (int i = 0; i < s.length(); i++) {
+            char ch = s.charAt(i);
+            if (!vis[ch - 'a']) {
+                while (sb.length() > 0 && sb.charAt(sb.length() - 1) > ch) {
+                    if (num[sb.charAt(sb.length() - 1) - 'a'] > 0) {
+                        vis[sb.charAt(sb.length() - 1) - 'a'] = false;
+                        sb.deleteCharAt(sb.length() - 1);
+                    } else {
+                        break;
+                    }
+                }
+                vis[ch - 'a'] = true;
+                sb.append(ch);
             }
+            num[ch - 'a'] -= 1;
         }
-        return ' ';
+        return sb.toString();
+
+
     }
 
 }
