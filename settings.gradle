@@ -1,3 +1,4 @@
+include ':datasavedemo'
 include ':rpcclient'
 include ':rpcservice'
 include ':baselibrary'
