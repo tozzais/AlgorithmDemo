@@ -2,9 +2,6 @@ package com.example.algorithmdemo.test2021;
 
 import org.junit.Test;
 
-import java.util.Arrays;
-import java.util.List;
-
 
 /**
  * 832. 翻转图像
@@ -15,8 +12,7 @@ public class LeeCode0224UnitTest {
         int[][] a = new int[][]{{1,1,0},{1,0,1},{0,0,0}};
         int[][] ints = flipAndInvertImage(a);
         for (int[] b : ints) {
-            for (int c :
-                    b) {
+            for (int c : b) {
                 System.out.print(c+",");
             }
             System.out.println();
