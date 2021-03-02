@@ -15,7 +15,12 @@ import java.util.Map;
 public class LeeCode0226UnitTest {
     @Test
     public void test() {
-        int[][] a = new int[][]{{1, 1, 0}, {1, 0, 1}, {0, 0, 0}};
+
+        int[][] a = new int[][]{};
+        NumMatrix numMatrix = new NumMatrix(a);
+        System.out.println(numMatrix.sumRegion(0,0,0,0));
+//        System.out.println(numMatrix.sumRegion(1,1,2,2));
+//        System.out.println(numMatrix.sumRegion(1,2,2,4));
 
     }
 
