@@ -14,17 +14,12 @@ import java.util.List;
 public class LeeCode0117UnitTest {
     @Test
     public void test() {
-        int[][] a = new int[][]{{0,1},{1,3},{-4,-7},{5,11}};
-        Arrays.sort(a, new Comparator<int[]>() {
-            @Override
-            public int compare(int[] o1, int[] o2) {
-                return o1[0] - o2[0];
-            }
-        });
-        for (int i = 0; i < a.length; i++) {
-            System.out.println(a[i][0]);
+        double money = 12000;
+        System.out.println("第1年余额=:"+money);
+        for (int i = 2; i <= 30 ; i++) {
+            money = money*1.045+12000;
+            System.out.println("第"+i+"年余额="+money);
         }
-
     }
 
 
