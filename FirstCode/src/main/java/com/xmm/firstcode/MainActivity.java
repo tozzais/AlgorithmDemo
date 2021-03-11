@@ -1,9 +1,11 @@
 package com.xmm.firstcode;
 
+import android.content.ComponentName;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.Menu;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -21,7 +23,12 @@ public class MainActivity extends AppCompatActivity {
         Log.e(TAG, "onCreate");
 
         findViewById(R.id.tv).setOnClickListener(view -> {
-            start();
+//            Intent intent = new Intent("com.xmm.firstcode.section5.MyBroadcastReceiver");
+//            intent.setComponent(new ComponentName("com.xmm.firstcode","com.xmm.firstcode.section5.MyBroadcastReceiver"));
+//            sendBroadcast(intent);
+            Log.e("onReceive","Boot Complete");
+            Toast.makeText(MainActivity.this,"Boot Complete",Toast.LENGTH_LONG).show();
+            Toast.makeText(MainActivity.this,"Boot Complete2",Toast.LENGTH_LONG).show();
         });
 
         findViewById(R.id.tv_start).setOnClickListener(view -> {
